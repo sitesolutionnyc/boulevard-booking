@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boulevard Self-Booking</title>
+  </head>
+  <body>
+    <!-- Boulevard Self-Booking overlay -->
+    <script>
+      (function (a) {
+        var b = {
+          businessId: "fd941d29-5862-4e8e-a4a4-9584489a8a21",
+        };
+
+        var c = a.createElement("script");
+        var d = a.querySelector("script");
+
+        c.src = "https://static.joinboulevard.com/injector.min.js";
+        c.async = true;
+        c.onload = function () {
+          blvd.init(b);
+        };
+
+        d.parentNode.insertBefore(c, d);
+      })(document);
+    </script>
+    <!-- End Boulevard Self-Booking overlay -->
+  </body>
+</html>
